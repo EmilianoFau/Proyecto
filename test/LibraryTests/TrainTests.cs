@@ -9,24 +9,17 @@ using NUnit.Framework;
 
 namespace Tests
 {
-    /// <summary>
-    /// Prueba de la clase <see cref="Train"/>.
-    /// </summary>
+
     [TestFixture]
     public class TrainTests
     {
-        /// <summary>
-        /// El tren para probar.
-        /// </summary>
         private Train train;
 
-        /// <summary>
-        /// Crea un tren para probar.
-        /// </summary>
+       
         [SetUp]
         public void Setup()
         {
-            this.train = new Train();
+            
         }
 
         /// <summary>
@@ -35,9 +28,7 @@ namespace Tests
         [Test]
         public void StartTrainTest()
         {
-            Assert.NotNull(this.train);
-            this.train.StartEngines();
-            Assert.True(this.train.IsEngineStarted);
+          
         }
 
         /// <summary>
@@ -46,10 +37,7 @@ namespace Tests
         [Test]
         public void StopTrainTest()
         {
-            Assert.NotNull(this.train);
-            this.train.StartEngines();
-            this.train.StopEngines();
-            Assert.False(this.train.IsEngineStarted);
+           
         }
     }
 }
