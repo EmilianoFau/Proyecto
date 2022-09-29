@@ -8,6 +8,7 @@ namespace Proyecto_Chatbot
         public string Email {get; set;}
         public string Username {get; set;}
         private string Contraseña {get; set;}
+        
         public Administrador(string nombre, string email, string username, string contraseña)
         {
             this.Nombre = nombre;
